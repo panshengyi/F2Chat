@@ -1,0 +1,85 @@
+local bert_model = "google/bert_uncased_L-4_H-512_A-8";
+local text_only = false;
+local use_numeric = true;
+local stat_path = "F2Chat/data/deeplearning4j_minmax.json";
+
+{
+  "random_seed": 2021,
+  "numpy_seed": 2021,
+  "pytorch_seed": 2021,
+  "dataset_reader": {
+    "type": "reader_stage2",
+    "max_tokens": 128,
+    "max_messages": 20,
+    "merge": true,
+    "use_level1": false,
+    "text_only": text_only,
+    "use_numeric": use_numeric,
+    "use_PTM": true,
+    "stat_path": stat_path,
+    "processed": true,
+    "tokenizer": {
+      "type": "pretrained_transformer",
+      "model_name": bert_model,
+      "add_special_tokens": false,
+      "max_length": 50
+    },
+    "token_indexers": {
+      "tokens": {
+        "type": "pretrained_transformer",
+        "model_name": bert_model,
+        "namespace": "tags"
+      }
+    },
+  },
+  // "vocabulary": {
+  //   "type": "extend",
+  //   "directory": "INTMiner1/out1/vocabulary",
+  //   "max_vocab_size": {"token_vocab": 1}
+  // },
+  "train_data_path": "F2Chat/data/deeplearning4j_train_0_v0_1.json",
+  "validation_data_path": "F2Chat/data/deeplearning4j_validation_0_v0_1.json",
+  "model": {
+    "type": "f2chat",
+    "encoder_path": "F2Chat/out_deeplearning4j_0_v0/",
+    "encoder_weights": "best.th",
+    "use_encoder_header": true,
+    "text_only": text_only,
+    "use_numeric": use_numeric,
+    "nontext_header": 256,
+    "stat_path": stat_path,
+    "label_namespace": "intention_labels",
+    "dropout": 0.1,
+    "device": "cuda:0"
+  },
+  "data_loader": {
+    "batch_size": 8,
+    "shuffle": true
+  },
+  "trainer": {
+    "optimizer": {
+      "type": "huggingface_adamw",
+      "parameter_groups": [[["_encoder"], {"lr": 1e-5, "requires_grad": true}]],
+      "lr": 1e-4,
+      "betas": [
+        0.9,
+        0.999
+      ]
+    },
+    "checkpointer": {
+      "num_serialized_models_to_keep": 2,
+      "keep_serialized_model_every_num_seconds": 18000
+    },
+    "learning_rate_scheduler": {
+    "type": "linear_with_warmup",
+    "num_epochs": 20,
+    "num_steps_per_epoch": 50,
+    "warmup_steps": 150
+    },
+    "num_gradient_accumulation_steps": 2,
+    "validation_metric": "+f1-score",
+    "num_epochs": 20,
+    //"patience": 10,
+    "cuda_device": 0
+  }
+}

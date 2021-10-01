@@ -1,0 +1,83 @@
+local bert_model = "google/bert_uncased_L-4_H-512_A-8";
+
+{
+  "random_seed": 2021,
+  "numpy_seed": 2021,
+  "pytorch_seed": 2021,
+  "dataset_reader": {
+    "type": "reader",
+    "max_tokens": 128,
+    "max_messages": 20,
+    "merge": true,
+    "text_only": true,
+    "use_level1": false,
+    "use_PTM": true,
+    "tokenizer": {
+      "type": "pretrained_transformer",
+      "model_name": bert_model,
+      "add_special_tokens": false,
+      "max_length": 50
+    },
+    "token_indexers": {
+      "tokens": {
+        "type": "pretrained_transformer",
+        "model_name": bert_model,
+        "namespace": "tags"
+      }
+    }
+  },
+  "train_data_path": "F2Chat/data/deeplearning4j_train_0_v0.json",
+  "validation_data_path": "F2Chat/data/deeplearning4j_validation_0_v0.json",
+  "model": {
+    "type": "f2chat_t",
+    "label_namespace": "labels",
+    "dropout": 0.1,
+    "device": "cuda",
+    "use_header": true,
+    "PTM": bert_model,
+    "additional_token_num": 0,
+    "text_field_embedder": {
+      "token_embedders": {
+        "tokens": {
+          "type": "pretrained_transformer",
+          "model_name": bert_model,
+          "train_parameters": true
+        }
+      }
+    }
+  },
+  "data_loader": {
+    "batch_size": 16,
+    "shuffle": false
+  },
+  "validation_data_loader":{
+    "batch_size": 9,
+    "shuffle": false
+  },
+  "trainer": {
+    "optimizer": {
+      "type": "huggingface_adamw",
+      "parameter_groups": [[["_text_field_embedder"], {"lr": 2e-5, "requires_grad": true}], [["_bert_pooler"], {"lr": 5e-5, "requires_grad": true}]],
+      "lr": 1e-3,
+      "betas": [
+        0.9,
+        0.999
+      ]
+    },
+    "checkpointer": {
+      "num_serialized_models_to_keep": 2,
+      "keep_serialized_model_every_num_seconds": 18000
+    },
+    // "learning_rate_scheduler": {
+    //  "type": "linear_with_warmup",
+    //  "num_epochs": 30,
+    //  "num_steps_per_epoch": 663,
+    //  "warmup_steps": 1989
+    // },
+    "num_gradient_accumulation_steps": 2,
+    "validation_metric": "+f1-score",
+    "num_epochs": 30,
+    //"patience": 10,
+    "cuda_device": 0
+  }
+}

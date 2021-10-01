@@ -1,0 +1,178 @@
+{
+    "blockgap": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            150,
+            35
+        ]
+    },
+    "blockgapMean": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            25
+        ]
+    },
+    "blockgapStd": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            25
+        ]
+    },
+    "timegap": {
+        "thres": null,
+        "use_log": true,
+        "max": [
+            5000,
+            3000
+        ]
+    },
+    "timegapMean": {
+        "thres": null,
+        "use_log": true,
+        "max": [
+            3000
+        ]
+    },
+    "timegapStd": {
+        "thres": null,
+        "use_log": true,
+        "max": [
+            2000
+        ]
+    },
+    "round": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            50,
+            25
+        ]
+    },
+    "token": {
+        "thres": null,
+        "use_log": true,
+        "max": [
+            1500,
+            600,
+            200
+        ]
+    },
+    "character": {
+        "thres": null,
+        "use_log": true,
+        "max": [
+            6000,
+            3000,
+            1000
+        ]
+    },
+    "speaker": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            6
+        ]
+    },
+    "ERRORTAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            4,
+            4,
+            3
+        ]
+    },
+    "DOCUMENTTAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            5,
+            3,
+            3
+        ]
+    },
+    "APITAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            16,
+            12,
+            6
+        ]
+    },
+    "CODETAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            8,
+            7,
+            5
+        ]
+    },
+    "ISSUETAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            3,
+            3,
+            2
+        ]
+    },
+    "URLTAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            3,
+            2,
+            2
+        ]
+    },
+    "MENTIONTAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            15,
+            10,
+            3
+        ]
+    },
+    "NUMBERTAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            25,
+            15,
+            10
+        ]
+    },
+    "PATHTAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            2,
+            2,
+            1
+        ]
+    },
+    "FILETAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            3,
+            2,
+            2
+        ]
+    },
+    "IMAGETAG": {
+        "thres": null,
+        "use_log": false,
+        "max": [
+            3,
+            3,
+            1
+        ]
+    }
+}

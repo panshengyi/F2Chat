@@ -1,0 +1,368 @@
+{
+    "num_timegap_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.176091259055681,
+        "min": 0.0
+    },
+    "num_timegapMean_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2.602059991327962,
+        "min": 0
+    },
+    "num_timegapStd_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2.602059991327962,
+        "min": 0
+    },
+    "num_blockgap_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 200,
+        "min": 1
+    },
+    "num_blockgapMean_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 20,
+        "min": 1.0
+    },
+    "num_blockgapStd_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 20,
+        "min": 0.0
+    },
+    "num_speaker_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 8,
+        "min": 2
+    },
+    "num_round_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 50,
+        "min": 2
+    },
+    "num_token_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.176091259055681,
+        "min": 1.1760912590556811
+    },
+    "num_character_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.8450980400142565,
+        "min": 1.8325089127062362
+    },
+    "ratio_timegap_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0.01036348010717355
+    },
+    "ratio_blockgap_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0.006896551724137931
+    },
+    "num_ERRORTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 5,
+        "min": 0
+    },
+    "num_DOCUMENTTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 5,
+        "min": 0
+    },
+    "num_APITAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 20,
+        "min": 0
+    },
+    "num_CODETAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 12,
+        "min": 0
+    },
+    "num_ISSUETAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_URLTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 5,
+        "min": 0
+    },
+    "num_MENTIONTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 25,
+        "min": 0
+    },
+    "num_NUMBERTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 15,
+        "min": 0
+    },
+    "num_PATHTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 4,
+        "min": 0
+    },
+    "num_FILETAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 5,
+        "min": 0
+    },
+    "num_IMAGETAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 5,
+        "min": 0
+    },
+    "num_token_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2.176091259055681,
+        "min": 0.0
+    },
+    "num_character_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2.9999999999999996,
+        "min": 0.7781512503836435
+    },
+    "num_timegap_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2.301029995663981,
+        "min": 0.0
+    },
+    "num_blockgap_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 15,
+        "min": 1
+    },
+    "ratio_token_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 0.9545454545454546,
+        "min": 0.0017421602787456446
+    },
+    "ratio_character_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 0.9157088122605364,
+        "min": 0.0022300095571838167
+    },
+    "ratio_timegap_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0.0
+    },
+    "ratio_blockgap_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0.00145985401459854
+    },
+    "num_ERRORTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_DOCUMENTTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1,
+        "min": 0
+    },
+    "num_APITAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 7,
+        "min": 0
+    },
+    "num_CODETAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 5,
+        "min": 0
+    },
+    "num_ISSUETAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1,
+        "min": 0
+    },
+    "num_URLTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_MENTIONTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_NUMBERTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 5,
+        "min": 0
+    },
+    "num_PATHTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_FILETAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_IMAGETAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "ratio_questionmark_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1,
+        "min": 0
+    },
+    "ratio_greeting_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1,
+        "min": 0
+    },
+    "num_round_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 25,
+        "min": 1
+    },
+    "num_token_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2.7781512503836434,
+        "min": 0.8450980400142567
+    },
+    "num_character_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.4771212547196617,
+        "min": 1.6334684555795864
+    },
+    "ratio_round_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 0.6666666666666666,
+        "min": 0.017543859649122806
+    },
+    "ratio_token_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 0.9846153846153847,
+        "min": 0.027777777777777776
+    },
+    "ratio_character_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 0.9796839729119639,
+        "min": 0.024653739612188367
+    },
+    "num_ERRORTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 4,
+        "min": 0
+    },
+    "num_DOCUMENTTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_APITAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 15,
+        "min": 0
+    },
+    "num_CODETAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 9,
+        "min": 0
+    },
+    "num_ISSUETAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_URLTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_MENTIONTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 13,
+        "min": 0
+    },
+    "num_NUMBERTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 10,
+        "min": 0
+    },
+    "num_PATHTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_FILETAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 4,
+        "min": 0
+    },
+    "num_IMAGETAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 4,
+        "min": 0
+    }
+}

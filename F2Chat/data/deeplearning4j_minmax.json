@@ -1,0 +1,368 @@
+{
+    "num_timegap_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.6989700043360187,
+        "min": 0.0
+    },
+    "num_timegapMean_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.4771212547196617,
+        "min": 0.0
+    },
+    "num_timegapStd_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.301029995663981,
+        "min": 0.0
+    },
+    "num_blockgap_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 150,
+        "min": 0
+    },
+    "num_blockgapMean_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 25,
+        "min": 0
+    },
+    "num_blockgapStd_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 25,
+        "min": 0.0
+    },
+    "num_speaker_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 6,
+        "min": 1
+    },
+    "num_round_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 50,
+        "min": 1
+    },
+    "num_token_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.176091259055681,
+        "min": 0.7781512503836435
+    },
+    "num_character_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.778151250383643,
+        "min": 1.5440680443502754
+    },
+    "ratio_timegap_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0
+    },
+    "ratio_blockgap_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0
+    },
+    "num_ERRORTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 4,
+        "min": 0
+    },
+    "num_DOCUMENTTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 5,
+        "min": 0
+    },
+    "num_APITAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 16,
+        "min": 0
+    },
+    "num_CODETAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 8,
+        "min": 0
+    },
+    "num_ISSUETAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_URLTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_MENTIONTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 15,
+        "min": 0
+    },
+    "num_NUMBERTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 25,
+        "min": 0
+    },
+    "num_PATHTAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_FILETAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_IMAGETAG_total": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_token_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2.301029995663981,
+        "min": 0.6020599913279623
+    },
+    "num_character_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2.9999999999999996,
+        "min": 1.3617278360175928
+    },
+    "num_timegap_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.4771212547196617,
+        "min": 0.0
+    },
+    "num_blockgap_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 35,
+        "min": 0
+    },
+    "ratio_token_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0.007293946024799417
+    },
+    "ratio_character_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0.008155930329001936
+    },
+    "ratio_timegap_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0
+    },
+    "ratio_blockgap_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0
+    },
+    "num_ERRORTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_DOCUMENTTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_APITAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 6,
+        "min": 0
+    },
+    "num_CODETAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 5,
+        "min": 0
+    },
+    "num_ISSUETAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_URLTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_MENTIONTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_NUMBERTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 10,
+        "min": 0
+    },
+    "num_PATHTAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1,
+        "min": 0
+    },
+    "num_FILETAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_IMAGETAG_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1,
+        "min": 0
+    },
+    "ratio_questionmark_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1,
+        "min": 0
+    },
+    "ratio_greeting_first": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1,
+        "min": 0
+    },
+    "num_round_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 25,
+        "min": 1
+    },
+    "num_token_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2.7781512503836434,
+        "min": 0.6020599913279623
+    },
+    "num_character_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3.4771212547196617,
+        "min": 1.3617278360175928
+    },
+    "ratio_round_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0.07692307692307693
+    },
+    "ratio_token_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0.06289308176100629
+    },
+    "ratio_character_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 1.0,
+        "min": 0.05673758865248227
+    },
+    "num_ERRORTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 4,
+        "min": 0
+    },
+    "num_DOCUMENTTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_APITAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 12,
+        "min": 0
+    },
+    "num_CODETAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 7,
+        "min": 0
+    },
+    "num_ISSUETAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    },
+    "num_URLTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_MENTIONTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 10,
+        "min": 0
+    },
+    "num_NUMBERTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 15,
+        "min": 0
+    },
+    "num_PATHTAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_FILETAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 2,
+        "min": 0
+    },
+    "num_IMAGETAG_questioner": {
+        "use": true,
+        "embedding_dim": 5,
+        "max": 3,
+        "min": 0
+    }
+}

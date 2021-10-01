@@ -1,0 +1,81 @@
+{
+  "random_seed": 2021,
+  "numpy_seed": 2021,
+  "pytorch_seed": 2021,
+  "dataset_reader": {
+    "type": "reader",
+    "max_tokens": 50,
+    "max_messages": 20,
+    "merge": false,
+    "text_only": true,
+    "use_level1": false,
+    "tokenizer": {
+      "type": "spacy",
+      "pos_tags": true
+    },
+    "token_indexers": {
+      "tokens": {
+        "type": "single_id",
+        "lowercase_tokens": true,
+        "namespace": "token_vocab"
+      },
+      "pos_tags": {
+        "type": "single_id",
+        "namespace": "pos_tag_vocab",
+        "feature_name": "tag_"
+      }
+    }
+  },
+  "train_data_path": "F2Chat/data/deeplearning4j_train_0_v0.json",
+  "validation_data_path": "F2Chat/data/deeplearning4j_validation_0_v0.json",
+  "model": {
+    "type": "baseline",
+    "label_namespace": "labels",
+    "dropout": 0.1,
+    "device": "cuda",
+    "text_field_embedder": {
+      "token_embedders": {
+        "tokens": {
+          "type": "embedding",
+          "embedding_dim": 50,
+          "trainable": true,
+          "vocab_namespace": "token_vocab",
+          "pretrained_file": "F2Chat/data/glove.6B.50d.txt"
+        },
+        "pos_tags": {
+          "type": "embedding",
+          "embedding_dim": 50,
+          "vocab_namespace": "pos_tag_vocab",
+          "trainable": true,
+          "sparse": true
+        }
+      }
+    }
+  },
+  "data_loader": {
+    "batch_size": 64,
+    "shuffle": true
+  },
+  "validation_data_loader":{
+    "batch_size": 90,
+    "shuffle": false
+  },
+  "trainer": {
+    "optimizer": {
+      "type": "dense_sparse_adam",
+      "lr": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ]
+    },
+    "checkpointer": {
+      "num_serialized_models_to_keep": 2,
+      "keep_serialized_model_every_num_seconds": 18000
+    },
+    "validation_metric": "+f1-score",
+    "num_epochs": 30,
+    //"patience": 10,
+    "cuda_device": 0
+  }
+}
