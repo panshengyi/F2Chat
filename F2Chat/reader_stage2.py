@@ -40,7 +40,7 @@ class ReaderStage2(DatasetReader):
                  merge: bool = False,
                  text_only: bool = True,
                  use_level1: bool = False,
-                 processed: bool = False,
+                 processed: bool = True,
                  stat_path: str = None) -> None:
         super().__init__(lazy=lazy, cache_directory=cache_directory)
 

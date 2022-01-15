@@ -37,11 +37,11 @@ local stat_path = "F2Chat/data/deeplearning4j_minmax.json";
   //   "directory": "INTMiner1/out1/vocabulary",
   //   "max_vocab_size": {"token_vocab": 1}
   // },
-  "train_data_path": "F2Chat/data/deeplearning4j_train_0_v0_1.json",
-  "validation_data_path": "F2Chat/data/deeplearning4j_validation_0_v0_1.json",
+  "train_data_path": "F2Chat/data/deeplearning4j_train_0_1.json",
+  "validation_data_path": "F2Chat/data/deeplearning4j_validation_0_1.json",
   "model": {
     "type": "f2chat",
-    "encoder_path": "F2Chat/out_deeplearning4j_0_v0/",
+    "encoder_path": "F2Chat/out_deeplearning4j_0/",
     "encoder_weights": "best.th",
     "use_encoder_header": true,
     "text_only": text_only,

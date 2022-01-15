@@ -34,11 +34,11 @@ We collect chat data from three active chatrooms on Gitter: [Angular](https://gi
 
    Memory: minimum 32G
 
-   GPU: minimum 16G, e.g., NVIDIA Tesla T4. optimum 32G, e.g., NVIDIA Tesla V100.
+   GPU: minimum 16G, e.g., NVIDIA Tesla T4, NVIDIA Tesla V100. optimal >=24G, e.g., NVIDIA GTX 3090
 
 2. Language: Python (v3.8)
 
-3. CUDA: 10.2
+3. CUDA: 11.2
 
 4. Python packages:
    * [PyTorch 1.7.0](https://pytorch.org/)

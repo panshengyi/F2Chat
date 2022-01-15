@@ -26,8 +26,8 @@
       }
     }
   },
-  "train_data_path": "F2Chat/data/deeplearning4j_train_0_v0.json",
-  "validation_data_path": "F2Chat/data/deeplearning4j_validation_0_v0.json",
+  "train_data_path": "F2Chat/data/deeplearning4j_train_0.json",
+  "validation_data_path": "F2Chat/data/deeplearning4j_validation_0.json",
   "model": {
     "type": "baseline",
     "label_namespace": "labels",
